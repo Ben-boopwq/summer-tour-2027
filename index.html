@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#0a0b0c" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Summer Tour 2027" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>Summer Tour 2027 — Ben Kirchheim</title>
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <button class="back-button" id="back-button" aria-label="Zur Route zurück">
+          <span>←</span> ROUTE
+        </button>
+        <div class="wordmark">BK <i></i> 2027</div>
+      </header>
+      <section id="app" class="app-content" aria-live="polite"></section>
+      <nav class="bottom-nav" aria-label="Hauptnavigation">
+        <button class="nav-item active" data-view="route"><span class="nav-icon">⌁</span><span>Route</span></button>
+        <button class="nav-item" data-view="content"><span class="nav-icon">◫</span><span>Content</span></button>
+        <button class="nav-item" data-view="guests"><span class="nav-icon">◎</span><span>Gäste</span></button>
+        <button class="nav-item" data-view="equipment"><span class="nav-icon">◌</span><span>Equipment</span></button>
+        <button class="nav-item" data-view="camper"><span class="nav-icon">▱</span><span>Camper</span></button>
+      </nav>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
